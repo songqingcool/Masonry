@@ -73,17 +73,17 @@
 /**
  *	Sets the NSLayoutConstraint priority to MASLayoutPriorityLow
  */
-- (MASConstraint * (^)())priorityLow;
+- (MASConstraint * (^)(void))priorityLow;
 
 /**
  *	Sets the NSLayoutConstraint priority to MASLayoutPriorityMedium
  */
-- (MASConstraint * (^)())priorityMedium;
+- (MASConstraint * (^)(void))priorityMedium;
 
 /**
  *	Sets the NSLayoutConstraint priority to MASLayoutPriorityHigh
  */
-- (MASConstraint * (^)())priorityHigh;
+- (MASConstraint * (^)(void))priorityHigh;
 
 /**
  *	Sets the constraint relation to NSLayoutRelationEqual
@@ -134,14 +134,10 @@
 - (MASConstraint *)centerY;
 - (MASConstraint *)baseline;
 
-#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000) || (__MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)
-
 - (MASConstraint *)firstBaseline;
 - (MASConstraint *)lastBaseline;
 
-#endif
-
-#if (__IPHONE_OS_VERSION_MIN_REQUIRED >= 80000) || (__TV_OS_VERSION_MIN_REQUIRED >= 9000)
+#if TARGET_OS_IPHONE || TARGET_OS_TV
 
 - (MASConstraint *)leftMargin;
 - (MASConstraint *)rightMargin;
