@@ -3,7 +3,7 @@
 //  MasonryTests
 //
 //  Created by 宋庆功 on 2016/12/9.
-//  Copyright © 2016年 思源. All rights reserved.
+//  Copyright © 2016年 公司名. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
